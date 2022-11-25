@@ -49,8 +49,8 @@ services:
       - NET_ADMIN
       - NET_RAW
     ports:
-      - target: 8080
-        published: 8080
+      - target: 8000
+        published: 8000
         protocol: tcp
     depends_on:
       - db
