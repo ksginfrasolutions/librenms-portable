@@ -19,13 +19,22 @@ Install  docker and docker-compose
   sudo sh install_docker.sh 
 ```
 
+
 Setup the Env  dependencies
 
 ```bash
   sh setup_env.sh
   
 ```
- #### (configuration for librenms could be found on  librenms.env )
+
+Edit  the env   files for changing the params 
+
+```bash
+TZ and Mysql  : .env 
+Libre  : librenms.env
+SMTP config  : msmtpd
+```
+
 
 
 Start the service
