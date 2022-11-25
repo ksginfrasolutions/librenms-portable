@@ -1,0 +1,9 @@
+db/
+librenms/weathermap/
+librenms/syslog-ng/
+librenms/rrd/
+librenms/alert-templates/
+librenms/monitoring-plugins/
+librenms/plugins/
+librenms.env 
+msmtpd.env
