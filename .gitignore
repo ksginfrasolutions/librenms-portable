@@ -5,6 +5,7 @@ librenms/rrd/
 librenms/alert-templates/
 librenms/monitoring-plugins/
 librenms/plugins/
+librenms/logs/
 librenms.env 
 msmtpd.env
 .env

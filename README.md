@@ -43,6 +43,11 @@ Start the service
   sudo docker-compose up -d 
  ```
 
+Stop the service
+
+```bash
+  sudo docker-compose down  
+ ```
 
 ### URL 
 http://localhost:8080/login
