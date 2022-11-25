@@ -1,5 +1,5 @@
 
-## Librenms portable with syslog enabled
+## Librenms docker-sidecar version
 
 Clone the project
 
@@ -35,23 +35,27 @@ Libre  : librenms.env
 SMTP config  : msmtpd
 ```
 
-
-
-Start the service
+Start the containers
 
 ```bash
   sudo docker-compose up -d 
  ```
 
-Stop the service
+
+### Create a admin user  
+http://localhost:8000
+
+
+## Restart all the containers
+
+
+```bash
+  sudo docker-compose restart
+ ```
+
+
+Stop the containers
 
 ```bash
   sudo docker-compose down  
  ```
-
-### URL 
-http://localhost:8000/login
-
-**username** : librenms
-
-**password** : librenms
