@@ -7,3 +7,4 @@ librenms/monitoring-plugins/
 librenms/plugins/
 librenms.env 
 msmtpd.env
+.env
