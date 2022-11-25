@@ -13,13 +13,13 @@ Go to the project directory
   cd librenms-portable
 ```
 
-Install  docker and docker-composer 
+Install  docker and docker-compose 
 
 ```bash
   sudo sh install_docker.sh 
 ```
 
-Setup the Env  dependencies
+Setup Env config
 
 ```bash
   sh setup_env.sh
