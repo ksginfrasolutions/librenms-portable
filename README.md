@@ -13,21 +13,19 @@ Go to the project directory
   cd librenms-portable
 ```
 
-Install  docker and docker-compose 
+Install  docker and docker-compose
 
 ```bash
   sudo sh install_docker.sh 
 ```
 
-Setup Env config
+Setup the Env  dependencies
 
 ```bash
   sh setup_env.sh
   
 ```
- configuration for librenms could be found on 
- 
- librenms.env 
+ #### (configuration for librenms could be found on  librenms.env )
 
 
 Start the service
@@ -37,12 +35,9 @@ Start the service
  ```
 
 
-URL for local access
-
+### URL 
 http://localhost:8080/login
 
+**username** : librenms
 
-
-### Default credentials
-username : librenms
-password : librenms
+**password** : librenms
