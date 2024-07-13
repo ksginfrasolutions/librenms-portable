@@ -4,7 +4,7 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/ccn-infra/librenms-portable
+  git clone https://github.com/ksginfrasolutions/librenms-portable
 ```
 
 Go to the project directory
