@@ -49,6 +49,12 @@ services:
       - db
       - redis
       - msmtpd
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 550s
+      retries: 10
+      start_period: 90s
+      timeout: 5s
     volumes:
       - "./librenms:/data"
     env_file:
@@ -72,8 +78,10 @@ services:
       - NET_ADMIN
       - NET_RAW
     depends_on:
-      - librenms
-      - redis
+       librenms:
+          condition: service_healthy
+       redis:
+          condition: service_started
     volumes:
       - "./librenms:/data"
     env_file:
@@ -99,8 +107,10 @@ services:
       - NET_ADMIN
       - NET_RAW
     depends_on:
-      - librenms
-      - redis
+       librenms:
+          condition: service_healthy
+       redis:
+          condition: service_started
     ports:
       - target: 514
         published: 514
@@ -131,9 +141,6 @@ services:
     cap_add:
       - NET_ADMIN
       - NET_RAW
-    depends_on:
-      - librenms
-      - redis
     ports:
       - target: 162
         published: 162
@@ -141,6 +148,11 @@ services:
       - target: 162
         published: 162
         protocol: udp
+    depends_on:
+       librenms:
+          condition: service_healthy
+       redis:
+          condition: service_started      
     volumes:
       - "./librenms:/data"
     env_file:
